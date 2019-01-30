@@ -54,6 +54,8 @@ namespace Victoria.Utilities
         }
 
         private static LogMessage Dummy(LogSeverity logSeverity, string source, string message, Exception exc = null)
-            => new LogMessage(logSeverity, source, message, exc);
+        {
+            return new LogMessage(logSeverity, source, message, exc);
+        }
     }
 }

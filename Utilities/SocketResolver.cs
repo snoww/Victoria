@@ -29,8 +29,8 @@ namespace Victoria.Utilities
         {
             _log = log;
             _name.node = nodeName;
-            _configuration = configuration;
-            _name.socket = $"{nodeName}-Socket";
+            _configuration = configuration;                       
+            _name.socket = $"{nodeName}Socket";
             _encoding = new UTF8Encoding(false);
             ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, errors) => true;
         }

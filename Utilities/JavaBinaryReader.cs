@@ -47,7 +47,7 @@ namespace Victoria.Utilities
                     (value2 & 0b10000000) != 0) //   highest bit 1 is true
                 {
                     var value1Chop = (value1 & 0b00011111) << 6;
-                    var value2Chop = (value2 & 0b00111111);
+                    var value2Chop = value2 & 0b00111111;
                     output[strlen++] = (char) (value1Chop | value2Chop);
                     continue;
                 }
@@ -67,31 +67,49 @@ namespace Victoria.Utilities
         }
 
         public string ReadNullableString()
-            => ReadBoolean() ? ReadJavaUtf8() : null;
+        {
+            return ReadBoolean() ? ReadJavaUtf8() : null;
+        }
 
         public override float ReadSingle()
-            => Read(4, BitConverter.ToSingle);
+        {
+            return Read(4, BitConverter.ToSingle);
+        }
 
         public override double ReadDouble()
-            => Read(8, BitConverter.ToDouble);
+        {
+            return Read(8, BitConverter.ToDouble);
+        }
 
         public override short ReadInt16()
-            => Read(2, BitConverter.ToInt16);
+        {
+            return Read(2, BitConverter.ToInt16);
+        }
 
         public override int ReadInt32()
-            => Read(4, BitConverter.ToInt32);
+        {
+            return Read(4, BitConverter.ToInt32);
+        }
 
         public override long ReadInt64()
-            => Read(8, BitConverter.ToInt64);
+        {
+            return Read(8, BitConverter.ToInt64);
+        }
 
         public override ushort ReadUInt16()
-            => Read(2, BitConverter.ToUInt16);
+        {
+            return Read(2, BitConverter.ToUInt16);
+        }
 
         public override uint ReadUInt32()
-            => Read(4, BitConverter.ToUInt32);
+        {
+            return Read(4, BitConverter.ToUInt32);
+        }
 
         public override ulong ReadUInt64()
-            => Read(8, BitConverter.ToUInt64);
+        {
+            return Read(8, BitConverter.ToUInt64);
+        }
 
         private T Read<T>(int size, Func<byte[], int, T> converter) where T : struct
         {

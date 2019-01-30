@@ -14,10 +14,11 @@ namespace Victoria.Utilities
         /// <returns>Url of the thumbnail.</returns>
         public static async Task<string> FetchAsync(LavaTrack track)
         {
-            JObject result;
             JToken thumbObj;
             
             using (var http = new HttpClient())
+            {
+                JObject result;
                 switch ($"{track.Uri}".ToLower())
                 {
                     case var yt when yt.Contains("youtube"):
@@ -44,6 +45,7 @@ namespace Victoria.Utilities
                     default:
                         return "https://i.imgur.com/YPCEUDK.gif";
                 }
+            }
 
             var thumbnail = $"{thumbObj}";
             return string.IsNullOrWhiteSpace(thumbnail) ? "https://i.imgur.com/YPCEUDK.gif" : thumbnail;

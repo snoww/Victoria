@@ -1,9 +1,9 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
+using Newtonsoft.Json.Linq;
 using Victoria.Entities;
 
 namespace Victoria.Utilities
@@ -49,7 +49,9 @@ namespace Victoria.Utilities
                     return string.Empty;
 
                 using (var content = get.Content)
+                {
                     return await content.ReadAsStringAsync().ConfigureAwait(false);
+                }
             }
         }
 

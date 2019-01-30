@@ -9,13 +9,13 @@
 
     <PropertyGroup>
         <Title>Victoria</Title>
-        <Version>3.3.0</Version>
+        <Version>3.3.1</Version>
         <Authors>Yucked</Authors>
         <Copyright>2018 - 2019 Yucked. All rights reserved.</Copyright>
         <PackageIconUrl>https://i.imgur.com/F34NrfQ.png</PackageIconUrl>
         <PackageTags>Lavalink, Wrapper, Discord Music, Yucked</PackageTags>
         <PackageProjectUrl>https://github.com/Yucked/Victoria</PackageProjectUrl>
-        <PackageReleaseNotes>Resume implemented 98%. AddNodeAsync related issues resolved. Added noReplace from Lavalink's api (Requires latest Lavalink build).</PackageReleaseNotes>
+        <PackageReleaseNotes>Code formatting. Minor changes.</PackageReleaseNotes>
         <Description>🌋 - Lavalink wrapper for Discord.NET. Provides more options and performs better than Lavalink.NET and Sharplink combined.</Description>
     </PropertyGroup>
 

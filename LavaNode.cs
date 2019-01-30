@@ -195,7 +195,9 @@ namespace Victoria
         /// <param name="guildId"></param>
         /// <returns><see cref="LavaPlayer"/></returns>
         public LavaPlayer GetPlayer(ulong guildId)
-            => _players.TryGetValue(guildId, out var player) ? player : null;
+        {
+            return _players.TryGetValue(guildId, out var player) ? player : null;
+        }
 
         /// <summary>
         /// Searches all of the sources specified in application.yml. Also accepts file path pointing to a playable file.
@@ -203,7 +205,9 @@ namespace Victoria
         /// <param name="query">Search terms.</param>
         /// <returns><see cref="LavaResult"/></returns>
         public Task<LavaResult> GetTracksAsync(string query)
-            => ResolveRequestAsync(WebUtility.UrlEncode(query));
+        {
+            return ResolveRequestAsync(WebUtility.UrlEncode(query));
+        }
 
         /// <summary>
         /// Performs a Youtube search for your query.
@@ -211,7 +215,9 @@ namespace Victoria
         /// <param name="query">Search terms.</param>
         /// <returns><see cref="LavaResult"/></returns>
         public Task<LavaResult> SearchYouTubeAsync(string query)
-            => ResolveRequestAsync(WebUtility.UrlEncode($"ytsearch:{query}"));
+        {
+            return ResolveRequestAsync(WebUtility.UrlEncode($"ytsearch:{query}"));
+        }
 
         /// <summary>
         /// Performs a Soundcloud search for your query.
@@ -219,7 +225,9 @@ namespace Victoria
         /// <param name="query">Search terms.</param>
         /// <returns><see cref="LavaResult"/></returns>
         public Task<LavaResult> SearchSoundcloudAsync(string query)
-            => ResolveRequestAsync(WebUtility.UrlEncode($"scsearch:{query}"));
+        {
+            return ResolveRequestAsync(WebUtility.UrlEncode($"scsearch:{query}"));
+        }
 
         /// <summary>
         /// Enables/Disables websocket resuming if client disconnects.
@@ -305,7 +313,9 @@ namespace Victoria
             using (var req = await _httpClient.GetAsync($"/loadtracks?identifier={query}").ConfigureAwait(false))
             using (var res = await req.Content.ReadAsStreamAsync().ConfigureAwait(false))
             using (var sr = new StreamReader(res, Encoding.UTF8))
+            {
                 json = await sr.ReadToEndAsync().ConfigureAwait(false);
+            }
             var data = JToken.Parse(json);
             _log?.Invoke(LogResolver.Debug(Name, json));
             var tracks = new HashSet<LavaTrack>();
