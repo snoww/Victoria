@@ -9,20 +9,11 @@
 Victoria is a Lavalink wrapper for Discord.NET library. It is better than Sharplink and Lavalink.Net and provides more features than both of the combined. It also supports almost all of the Lavalink features and keeps up with Lavalink features and updates.
 
 ## 🤔 `How To Use It?`
+Lavalink setup: https://github.com/Yucked/Victoria/wiki/⚙️-SETUPS
 
-> ### `Version 3.x`
-Guide: https://github.com/Yucked/Victoria/wiki/Handling-Lavalink
+Sample: https://github.com/Yucked/Victoria/wiki/🔰-SAMPLES#victoria-v4-sample
 
-Example: https://github.com/DraxCodes/Party-Bot
-- Commands: [AudioModule.cs](https://github.com/DraxCodes/Party-Bot/blob/master/PartyBot/Modules/AudioModule.cs)
-- Service: [AudioService.cs](https://github.com/DraxCodes/Party-Bot/blob/master/PartyBot/Services/AudioService.cs)
-
-> ### `Version 4.x`
-Notes: https://github.com/Yucked/Victoria/wiki/RELEASE-NOTES#v40-alpha
-
-Example: https://github.com/Yucked/Prototype
-- Events: [EventsHandler.cs](https://github.com/Yucked/Prototype/blob/master/Prototype.Core/Handlers/EventsHandler.cs)
-- Commands: [AudioModule.cs](https://github.com/Yucked/Prototype/blob/master/Prototype.Core/Modules/AudioModule.cs)
+Changes from v3 to v4: https://github.com/Yucked/Victoria/wiki/📔-RELEASE-NOTES#v4x
 
 ## 💡 `I Want X Feature In Victoria!`
 You can open an issue and describe your feature with massive details and make sure your feature is required on global scale.
