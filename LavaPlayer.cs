@@ -14,7 +14,7 @@ namespace Victoria
     /// <summary>
     /// Represents a <see cref="IVoiceChannel"/> connection.
     /// </summary>
-    public sealed class LavaPlayer
+    public class LavaPlayer
     {
         /// <summary>
         /// Keeps track of <see cref="PauseAsync"/> & <see cref="ResumeAsync"/>.

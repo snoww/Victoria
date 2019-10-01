@@ -17,13 +17,6 @@
         <PackageTags>Lavalink, Wrapper, Discord, Discord.NET, Music, Yucked</PackageTags>
         <PackageProjectUrl>https://github.com/Yucked/Victoria</PackageProjectUrl>
         <Description>🌋 - Lavalink wrapper for Discord.NET. Provides more options and performs better than Lavalink.NET and Sharplink combined.</Description>
-        <PackageReleaseNotes>
-            - Thanks to Earu for PR #36 and #37.
-
-            - Renaming of couple private fields.
-
-            - Included XML documentation.
-        </PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
