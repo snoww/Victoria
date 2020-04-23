@@ -1,22 +1,23 @@
-﻿using Newtonsoft.Json;
+﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System.Runtime.Serialization;
 
-namespace Victoria.Entities
-{
-    [JsonConverter(typeof(StringEnumConverter))]
-    internal enum EventType
-    {
-        [EnumMember(Value = "TrackEndEvent")]
-        TrackEnd,
+namespace Victoria.Entities {
+	[JsonConverter(typeof(StringEnumConverter))]
+	internal enum EventType {
+		[EnumMember(Value = "TrackStartEvent")]
+		TrackStart,
 
-        [EnumMember(Value = "TrackStuckEvent")]
-        TrackStuck,
+		[EnumMember(Value = "TrackEndEvent")]
+		TrackEnd,
 
-        [EnumMember(Value = "TrackExceptionEvent")]
-        TrackException,
+		[EnumMember(Value = "TrackStuckEvent")]
+		TrackStuck,
 
-        [EnumMember(Value = "WebSocketClosedEvent")]
-        WebSocketClosed
-    }
+		[EnumMember(Value = "TrackExceptionEvent")]
+		TrackException,
+
+		[EnumMember(Value = "WebSocketClosedEvent")]
+		WebSocketClosed
+	}
 }

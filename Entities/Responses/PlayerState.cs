@@ -1,22 +1,20 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using Newtonsoft.Json;
 
-namespace Victoria.Entities
-{
-    internal struct PlayerState
-    {
-        [JsonIgnore]
-        public DateTimeOffset Time
-            => DateTimeOffset.FromUnixTimeMilliseconds(LongTime);
+namespace Victoria.Entities {
+	internal struct PlayerState {
+		[JsonIgnore]
+		public DateTimeOffset Time
+			=> DateTimeOffset.FromUnixTimeMilliseconds(LongTime);
 
-        [JsonProperty("time")]
-        private long LongTime { get; set; }
+		[JsonProperty("time")]
+		private long LongTime { get; set; }
 
-        [JsonIgnore]
-        public TimeSpan Position
-            => TimeSpan.FromMilliseconds(LongPosition);
+		[JsonIgnore]
+		public TimeSpan Position
+			=> TimeSpan.FromMilliseconds(LongPosition);
 
-        [JsonProperty("position")]
-        private long LongPosition { get; set; }
-    }
+		[JsonProperty("position")]
+		private long LongPosition { get; set; }
+	}
 }

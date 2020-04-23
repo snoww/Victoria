@@ -1,40 +1,38 @@
-﻿using Newtonsoft.Json;
+﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System.Runtime.Serialization;
 
-namespace Victoria.Entities
-{
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum LoadType
-    {
+namespace Victoria.Entities {
+	[JsonConverter(typeof(StringEnumConverter))]
+	public enum LoadType {
         /// <summary>
-        /// Returned when a single track is loaded.
+        ///     Returned when a single track is loaded.
         /// </summary>
         [EnumMember(Value = "TRACK_LOADED")]
-        TrackLoaded,
+		TrackLoaded,
 
         /// <summary>
-        /// Returned when a playlist is loaded.
+        ///     Returned when a playlist is loaded.
         /// </summary>
         [EnumMember(Value = "PLAYLIST_LOADED")]
-        PlaylistLoaded,
+		PlaylistLoaded,
 
         /// <summary>
-        /// Returned when a search result is made (i.e ytsearch: some song).
+        ///     Returned when a search result is made (i.e ytsearch: some song).
         /// </summary>
         [EnumMember(Value = "SEARCH_RESULT")]
-        SearchResult,
+		SearchResult,
 
         /// <summary>
-        /// Returned if no matches/sources could be found for a given identifier.
+        ///     Returned if no matches/sources could be found for a given identifier.
         /// </summary>
         [EnumMember(Value = "NO_MATCHES")]
-        NoMatches,
+		NoMatches,
 
         /// <summary>
-        /// Returned if Lavaplayer failed to load something for some reason.
+        ///     Returned if Lavaplayer failed to load something for some reason.
         /// </summary>
         [EnumMember(Value = "LOAD_FAILED")]
-        LoadFailed
-    }
+		LoadFailed
+	}
 }

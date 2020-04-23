@@ -1,38 +1,39 @@
-﻿using Discord;
-using Discord.WebSocket;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Discord;
+using Discord.WebSocket;
 
-namespace Victoria
-{
+namespace Victoria {
     /// <summary>
-    /// Represents a <see cref="DiscordSocketClient"/> connection to Lavalink server.
+    ///     Represents a <see cref="DiscordSocketClient" /> connection to Lavalink server.
     /// </summary>
-    public sealed class LavaSocketClient : LavaBaseClient
-    {
+    public sealed class LavaSocketClient : LavaBaseClient {
         /// <summary>
-        /// Starts websocket connection with Lavalink server once <see cref="DiscordSocketClient"/> hits ready event.
+        ///     Starts websocket connection with Lavalink server once <see cref="DiscordSocketClient" /> hits ready event.
         /// </summary>
-        /// <param name="socketClient"><see cref="DiscordSocketClient"/></param>
-        /// <param name="configuration"><see cref="Configuration"/></param>
-        public Task StartAsync(DiscordSocketClient socketClient, Configuration configuration = null)
-        {
-            socketClient.Disconnected += OnDisconnected;
-            return InitializeAsync(socketClient, configuration);
-        }
+        /// <param name="socketClient">
+        ///     <see cref="DiscordSocketClient" />
+        /// </param>
+        /// <param name="configuration">
+        ///     <see cref="Configuration" />
+        /// </param>
+        public Task StartAsync(DiscordSocketClient socketClient, Configuration configuration = null) {
+			socketClient.Disconnected += OnDisconnected;
+			return InitializeAsync(socketClient, configuration);
+		}
 
-        private async Task OnDisconnected(Exception exception)
-        {
-            if (Configuration.PreservePlayers)
-                return;
+		private async Task OnDisconnected(Exception exception) {
+			if (Configuration.PreservePlayers) {
+				return;
+			}
 
-            foreach (var player in Players.Values)
-            {
-                await player.DisposeAsync().ConfigureAwait(false);
-            }
-            Players.Clear();
+			foreach (var player in Players.Values) {
+				await player.DisposeAsync().ConfigureAwait(false);
+			}
 
-            ShadowLog?.WriteLog(LogSeverity.Error, "WebSocket disconnected! Disposing all connected players.", exception);
-        }
-    }
+			Players.Clear();
+
+			ShadowLog?.WriteLog(LogSeverity.Error, "WebSocket disconnected! Disposing all connected players.", exception);
+		}
+	}
 }

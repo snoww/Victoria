@@ -3,39 +3,40 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.WebSocket;
 
-namespace Victoria
-{
+namespace Victoria {
     /// <summary>
-    /// Represents a <see cref="DiscordShardedClient"/> with Lavalink server.
+    ///     Represents a <see cref="DiscordShardedClient" /> with Lavalink server.
     /// </summary>
-    public sealed class LavaShardClient : LavaBaseClient
-    {
+    public sealed class LavaShardClient : LavaBaseClient {
         /// <summary>
-        /// Starts websocket connection with Lavalink server once <see cref="DiscordSocketClient"/> hits ready event.
+        ///     Starts websocket connection with Lavalink server once <see cref="DiscordSocketClient" /> hits ready event.
         /// </summary>
-        /// <param name="socketClient"><see cref="DiscordSocketClient"/></param>
-        /// <param name="configuration"><see cref="Configuration"/></param>
-        public Task StartAsync(DiscordShardedClient shardedClient, Configuration configuration = null)
-        {
-            shardedClient.ShardDisconnected += OnShardDisconnected;
-            return InitializeAsync(shardedClient, configuration);
-        }
+        /// <param name="socketClient">
+        ///     <see cref="DiscordSocketClient" />
+        /// </param>
+        /// <param name="configuration">
+        ///     <see cref="Configuration" />
+        /// </param>
+        public Task StartAsync(DiscordShardedClient shardedClient, Configuration configuration = null) {
+			shardedClient.ShardDisconnected += OnShardDisconnected;
+			return InitializeAsync(shardedClient, configuration);
+		}
 
-        private async Task OnShardDisconnected(Exception exception, DiscordSocketClient socketClient)
-        {
-            if (Configuration.PreservePlayers)
-                return;
+		private async Task OnShardDisconnected(Exception exception, DiscordSocketClient socketClient) {
+			if (Configuration.PreservePlayers) {
+				return;
+			}
 
-            foreach (var guild in socketClient.Guilds)
-            {
-                if (!Players.TryRemove(guild.Id, out var player))
-                    continue;
+			foreach (var guild in socketClient.Guilds) {
+				if (!Players.TryRemove(guild.Id, out var player)) {
+					continue;
+				}
 
-                await player.DisposeAsync().ConfigureAwait(false);
-            }
+				await player.DisposeAsync().ConfigureAwait(false);
+			}
 
-            Players.Clear();
-            ShadowLog?.WriteLog(LogSeverity.Error, "Shards disconnecting. Disposing all connected players.", exception);
-        }
-    }
+			Players.Clear();
+			ShadowLog?.WriteLog(LogSeverity.Error, "Shards disconnecting. Disposing all connected players.", exception);
+		}
+	}
 }
