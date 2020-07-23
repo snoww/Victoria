@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Projects/Victoria/docfx",
+  "source_base_path": "D:/Projects/Victoria/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Decoder.TrackDecoder.html",
-          "hash": "uaeo30eNpNgmH42izg9a+Q=="
+          "hash": "HAc/CmNBeP95BvU86/tinw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.DefaultQueue-1.html",
-          "hash": "KT0tGUdEMCZZ+5mfMEuhKw=="
+          "hash": "c27dodZiZyv5bQe1th6wMQ=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Enums.LoadStatus.html",
-          "hash": "aryqq+22NlGEjgxI4z7PUw=="
+          "hash": "rkNmX4RPTQvjrsarBaMAwg=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Enums.PlayerState.html",
-          "hash": "PpI2j56YrzxeNs+31yXFpQ=="
+          "hash": "MSs+1x80Sz1owNd66IJ2DQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Enums.TrackEndReason.html",
-          "hash": "4PIt7nCOkCGgsFLrT4k+yw=="
+          "hash": "hM6ruVCW+pmrJbGcDd2ZRw=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.Cpu.html",
-          "hash": "MXZHzE/SjQZlDSnehkLm6g=="
+          "hash": "iBHemQFyexkzm+fCKgy0TA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.Frames.html",
-          "hash": "d6pvbiSQXcZLt8yQOkBteA=="
+          "hash": "zWF1ZiN8OmvxQFCsaWYQ0w=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.Memory.html",
-          "hash": "59k0xlp2q8T25vDqpnrbxw=="
+          "hash": "V+3+lBwTEDA1rNg1nUULEg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.PlayerUpdateEventArgs.html",
-          "hash": "DQCK/PWq1wLfdgjjuKPQhw=="
+          "hash": "YRYPJ7lPd31vz6MTLmyI8g=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.StatsEventArgs.html",
-          "hash": "HobK01XDo/9kVFyPa1cMEQ=="
+          "hash": "oxu0FVVVFdtHYvvO2/hOpg=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackEndedEventArgs.html",
-          "hash": "zPzjnR4HZ+sVojNOui3W+A=="
+          "hash": "LdTbrCO2VxlvdCEgPyER8Q=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackExceptionEventArgs.html",
-          "hash": "3XVyc8MLeQCAgEVk3ZCOPA=="
+          "hash": "dFTYv3gk50MwZnp9uV5NOQ=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackStartEventArgs.html",
-          "hash": "RWvcI7gSeEHuirfYVky0Bg=="
+          "hash": "viE9Zuzhp6RwNSEumFHVfg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackStuckEventArgs.html",
-          "hash": "UVKWFy1OHvQe2QtLCLQh6A=="
+          "hash": "O6f8xVUOZHmzH6wOsi5MSA=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.WebSocketClosedEventArgs.html",
-          "hash": "P/4WSai93po8Vw8CCMPMfA=="
+          "hash": "qbeQcrWMAiK38btiXQLdaw=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Interfaces.IQueueable.html",
-          "hash": "Txemblv9M3xw7ZnGHOK6Jg=="
+          "hash": "Jz30T3rfb+4zYJBtPw1uhQ=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaConfig.html",
-          "hash": "X60fgtmUiXRstmythOBpXA=="
+          "hash": "KjeAA+Kya5yyxWvl56EOoA=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaNode-1.html",
-          "hash": "uXJxHXJJN+lW+MY/dm2adg=="
+          "hash": "Xn7e720vC0Cf1vkGRlFz0w=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaNode.html",
-          "hash": "kP0W8Y2STPv1Z7A/LgjVBA=="
+          "hash": "tXq63gNuismV307zVVVsWQ=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaPlayer.html",
-          "hash": "GGbxZQ9rdUZeVbjpqV8tQg=="
+          "hash": "KgQahYdG9eMUpF+RK3obLQ=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaSocket.html",
-          "hash": "lfv3DsaMJ6XN4sfCgW/zbg=="
+          "hash": "1RZv6h/SYupipC72vUtfMQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaTrack.html",
-          "hash": "auyoKzxCCN71L0ol8AJqfw=="
+          "hash": "IgQM36i8pWx3fv7P6J7uew=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Payloads.EqualizerBand.html",
-          "hash": "Oc6kiwrlrUcjsuSu17x0cw=="
+          "hash": "xXEXk0KpmGVHv6/0Z+ne/Q=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Resolvers.ArtworkResolver.html",
-          "hash": "nlzhp4G8TJYyHEiAvFBlDA=="
+          "hash": "PbZlg8WyHUPXCVa562XWuQ=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Resolvers.LyricsResolver.html",
-          "hash": "FYW9Q45YYdlHlcTtJJjkPw=="
+          "hash": "HoATnZh7JAKuIazmQ6FBQw=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.FailedAddress.html",
-          "hash": "PaU47Q+3Y9F8nmie9Nu6Sg=="
+          "hash": "jX1+7qaBFfaHpvYQ0W7oWg=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.IPBlock.html",
-          "hash": "sBqmqbnlPAozt6tQONigmw=="
+          "hash": "5DpaI0VZTA5ldd2L0zXSEA=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.PlaylistInfo.html",
-          "hash": "4vesUZ9F5EkhPUNlsKQf3w=="
+          "hash": "3x4kZvn3Ig+jDmAlt9y7Xg=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.RestException.html",
-          "hash": "qJA70pwUYjfHIIj8TdIL/Q=="
+          "hash": "afpmdYDkSBQtew9Kfj50dw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.RouteDetail.html",
-          "hash": "UyteIFKi1t50Pptf+wDyKQ=="
+          "hash": "wkkcf9T2TlrMyhoXn/PH5A=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.RouteStatus.html",
-          "hash": "QgAlcWeZXAJS/HvoMiHPLA=="
+          "hash": "0vKiRXmblGcOU5QB6MPApA=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.SearchResponse.html",
-          "hash": "aooIc06Jfavk0Izo/lZbjw=="
+          "hash": "oqaOBmPro3DZ5lhfo5PQgA=="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.RoutePlanner.html",
-          "hash": "76xmve5zqCfT2HHVtD4R5A=="
+          "hash": "v0gX99XR99D/dQ7oXptvQA=="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.VictoriaExtensions.html",
-          "hash": "cqCddRUBy5gQr6KiFVjdCw=="
+          "hash": "g00ylrQL89BR7VMpJ7qGoQ=="
         }
       },
       "is_incremental": false,
@@ -516,7 +516,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "8JxcD20Xvnev8EwCTWlM0w=="
+          "hash": "lepOWYUw0eXXttqCgUK3Sw=="
         }
       },
       "is_incremental": false,
@@ -551,7 +551,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/getting-started/bad-practice.html",
-          "hash": "8Fbqq+dcqgV99CLNv7KePw=="
+          "hash": "y9UeaLzaBjupqoD3/4DP6Q=="
         }
       },
       "is_incremental": false,
@@ -563,7 +563,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/getting-started/quick-start.html",
-          "hash": "SbzKJEjd1TkrEyck1v6uDw=="
+          "hash": "Lq+h94CB3jAvp34fI30m2g=="
         }
       },
       "is_incremental": false,
@@ -575,7 +575,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/getting-started/setup.html",
-          "hash": "PjglYuF+UA5G2O0k7oe0LA=="
+          "hash": "puPXOE88xAb5WopIzReE5g=="
         }
       },
       "is_incremental": false,
@@ -587,7 +587,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/intro.html",
-          "hash": "jJ4A7sUAqe7AqArMx6unCQ=="
+          "hash": "PhjHU7h9Ukm1MtbqTO9X/A=="
         }
       },
       "is_incremental": false,
@@ -599,7 +599,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/samples/auto-disconnect.html",
-          "hash": "ymB+KIJfjYjmlnQjHCLuSQ=="
+          "hash": "a8BRDfa8j1rNBnM4ND8LNQ=="
         }
       },
       "is_incremental": false,
@@ -611,7 +611,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/samples/auto-play.html",
-          "hash": "7LIJc66YiG9dp96lK/ZFBw=="
+          "hash": "YPd6YMuAPRdM77R8kdCLwQ=="
         }
       },
       "is_incremental": false,
@@ -623,7 +623,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/samples/exception-handling.html",
-          "hash": "AvpYX5JUotFQgsSax0q/wA=="
+          "hash": "j7RUU3wN2Wfrpl6bfCsSrw=="
         }
       },
       "is_incremental": false,
@@ -635,7 +635,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/samples/fetching-lyrics.html",
-          "hash": "AIBACE1XYOx0hcs495yqOw=="
+          "hash": "OiMcD6DvFfz4eyVEK6+9nQ=="
         }
       },
       "is_incremental": false,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/troubleshoot.html",
-          "hash": "UWulMljVP8P5sDbY/7ebZw=="
+          "hash": "vEk7RNInDKgje+vedDAJmg=="
         }
       },
       "is_incremental": false,
@@ -737,7 +737,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "JMcTyBHpqpa2+UlaAHDTrQ=="
+          "hash": "dn6bu28Ew92bZEHH+PIOpw=="
         }
       },
       "is_incremental": false,

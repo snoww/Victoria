@@ -67,7 +67,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Guides.Introduction">
+<h1 id="introduction">Introduction</h1>
 
+<p>Victoria utilizes several advance concepts similar to Discord.NET. The code style is rather easy to follow. Objects, properties and methods follow simple naming conventions. The main objects in Victoria are the following:</p>
+<ul>
+<li><p><a class="xref" href="../api/Victoria.LavaNode-1.html">LavaNode</a> represents a single connection to a Lavalink server. If you&#39;ve mulitple Lavalink servers running, you&#39;d need multiple <a class="xref" href="../api/Victoria.LavaNode-1.html">LavaNode</a>s for each server. Furthermore, you can use them for load balancing purposes.</p>
+</li>
+<li><p><a class="xref" href="../api/Victoria.LavaConfig.html">LavaConfig</a> is used to configure connection and configuration for each <a class="xref" href="../api/Victoria.LavaNode-1.html">LavaNode</a>.</p>
+</li>
+</ul>
+<ul>
+<li><p><a class="xref" href="../api/Victoria.LavaPlayer.html">LavaPlayer</a>  represents a single voice channel connection or guild connection. One guild can only have a single <a class="xref" href="../api/Victoria.LavaPlayer.html">LavaPlayer</a>.</p>
+</li>
+<li><p><a class="xref" href="../api/Victoria.LavaSocket.html">LavaSocket</a> is a wrapper around ClientWebSocket since ClientWebSocket lacks features such as Auto-Reconnect, Events and so on.</p>
+</li>
+<li><p><a class="xref" href="../api/Victoria.DefaultQueue-1.html">DefaultQueue</a> is based on LinkedList<t>. Why not Queue or ConcurrentQueue? Simply because of limitations and difficulty in terms of extensions.<p>
+</t></li>
+</ul>
+<p>If you&#39;re new to programming in general I suggest you utilize the following resources to familiarize yourself with C# and .NET ecosystem.</p>
+<ul>
+<li>Official C# Documentation: <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">https://docs.microsoft.com/en-us/dotnet/csharp/</a></li>
+<li>Official .NET Documentation: <a href="https://docs.microsoft.com/en-us/dotnet/">https://docs.microsoft.com/en-us/dotnet/</a></li>
+</ul>
+<p>Older versions of Victoria have used <code>.NET Standard</code> and these versions include: 1.x, 2.x, 3.x. Versions from 4.x and above target <code>.NET Core</code> by default.</p>
 </article>
           </div>
           
@@ -76,7 +98,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Yucked/Victoria/blob/v5/docfx/guides/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Yucked/Victoria/blob/v5/docs/guides/intro.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
