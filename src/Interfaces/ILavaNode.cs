@@ -25,7 +25,7 @@ namespace Victoria.Interfaces {
         /// <summary>
         /// 
         /// </summary>
-        ICollection<TLavaPlayer> Players { get; }
+        IReadOnlyCollection<TLavaPlayer> Players { get; }
 
         /// <summary>
         /// 
@@ -66,14 +66,16 @@ namespace Victoria.Interfaces {
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="guildId"></param>
         /// <returns></returns>
-        bool HasPlayer();
+        bool HasPlayer(ulong guildId);
 
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="guildId"></param>
         /// <param name="lavaPlayer"></param>
         /// <returns></returns>
-        bool TryGetPlayer(out TLavaPlayer lavaPlayer);
+        bool TryGetPlayer(ulong guildId, out TLavaPlayer lavaPlayer);
     }
 }

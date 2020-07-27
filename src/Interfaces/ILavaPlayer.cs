@@ -35,7 +35,12 @@ namespace Victoria.Interfaces {
         /// <summary>
         /// 
         /// </summary>
-        IReadOnlyCollection<EqualizerBand> Bands { get; }
+        IReadOnlyCollection<object> Bands { get; }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        LavaQueue<TLavaTrack> Queue { get; }
 
         /// <summary>
         /// 
