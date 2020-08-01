@@ -5,7 +5,7 @@ namespace Victoria {
     /// <summary>
     /// 
     /// </summary>
-    public abstract class AbstractLavaTrack : ILavaTrack {
+    public class AbstractLavaTrack : ILavaTrack {
         /// <inheritdoc />
         public string Hash { get; }
 
@@ -45,9 +45,9 @@ namespace Victoria {
         /// <param name="duration"></param>
         /// <param name="isSeekable"></param>
         /// <param name="isLiveStream"></param>
-        protected AbstractLavaTrack(string hash, string id, string title, string author,
-                                    string url, TimeSpan position, TimeSpan duration,
-                                    bool isSeekable, bool isLiveStream) {
+        public AbstractLavaTrack(string hash, string id, string title, string author,
+                                 string url, TimeSpan position, TimeSpan duration,
+                                 bool isSeekable, bool isLiveStream) {
             Hash = hash;
             Id = id;
             Title = title;
