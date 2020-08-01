@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Victoria.Enums;
 using Victoria.Interfaces;
+using Victoria.Responses.Search;
 using Victoria.WebSocket;
 using Victoria.Wrappers;
 
@@ -12,9 +16,26 @@ namespace Victoria {
     /// <summary>
     /// 
     /// </summary>
+    public class AbstractLavaNode : AbstractLavaNode<ILavaPlayer>, ILavaNode {
+        /// <inheritdoc />
+        public AbstractLavaNode(NodeConfiguration nodeConfiguration)
+            : base(nodeConfiguration) { }
+    }
+
+    /// <inheritdoc />
+    public class AbstractLavaNode<TLavaPlayer> : AbstractLavaNode<TLavaPlayer, ILavaTrack>
+        where TLavaPlayer : ILavaPlayer<ILavaTrack> {
+        /// <inheritdoc />
+        public AbstractLavaNode(NodeConfiguration nodeConfiguration)
+            : base(nodeConfiguration) { }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <typeparam name="TLavaPlayer"></typeparam>
     /// <typeparam name="TLavaTrack"></typeparam>
-    public abstract class AbstractLavaNode<TLavaPlayer, TLavaTrack> : ILavaNode<TLavaPlayer, TLavaTrack>
+    public class AbstractLavaNode<TLavaPlayer, TLavaTrack> : ILavaNode<TLavaPlayer, TLavaTrack>
         where TLavaPlayer : ILavaPlayer<TLavaTrack>
         where TLavaTrack : ILavaTrack {
         /// <inheritdoc />
@@ -26,6 +47,7 @@ namespace Victoria {
             => _players.Values as IReadOnlyCollection<TLavaPlayer>;
 
         private bool _isConnected;
+        private readonly NodeConfiguration _nodeConfiguration;
         private readonly DiscordClientWrapper _discordClientWrapper;
         private readonly WebSocketClient _webSocketClient;
         private readonly ConcurrentDictionary<ulong, TLavaPlayer> _players;
@@ -33,9 +55,11 @@ namespace Victoria {
         /// <summary>
         /// 
         /// </summary>
-        protected AbstractLavaNode(DiscordClientWrapper discordClientWrapper) {
-            _discordClientWrapper = discordClientWrapper;
-            _webSocketClient = new WebSocketClient("", 0, "ws");
+        public AbstractLavaNode(NodeConfiguration nodeConfiguration) {
+            _nodeConfiguration = nodeConfiguration;
+            _discordClientWrapper = nodeConfiguration.DiscordClient;
+
+            _webSocketClient = new WebSocketClient(nodeConfiguration.Hostname, nodeConfiguration.Port, "ws");
             _players = new ConcurrentDictionary<ulong, TLavaPlayer>();
         }
 
@@ -74,8 +98,26 @@ namespace Victoria {
         }
 
         /// <inheritdoc />
-        public async ValueTask SearchAsync(SearchType searchType, string query) {
-            throw new System.NotImplementedException();
+        public async ValueTask<SearchResponse> SearchAsync(SearchType searchType, string query) {
+            if (string.IsNullOrWhiteSpace(query)) {
+                throw new ArgumentNullException(nameof(query));
+            }
+
+            var path = searchType switch {
+                SearchType.YouTube    => $"/loadtracks?identifier={WebUtility.UrlEncode($"scsearch:{query}")}",
+                SearchType.SoundCloud => $"/loadtracks?identifier={WebUtility.UrlEncode($"ytsearch:{query}")}",
+                SearchType.Direct     => query
+            };
+
+            using var requestMessage =
+                new HttpRequestMessage(HttpMethod.Get, $"{_nodeConfiguration.HttpEndpoint}{path}") {
+                    Headers = {
+                        {"Authorization", _nodeConfiguration.Authorization}
+                    }
+                };
+
+            var searchResponse = await Extensions.HttpClient.ReadAsJsonAsync<SearchResponse>(requestMessage);
+            return searchResponse;
         }
 
         /// <inheritdoc />
