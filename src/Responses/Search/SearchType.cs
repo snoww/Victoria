@@ -1,4 +1,4 @@
-﻿namespace Victoria.Enums {
+﻿namespace Victoria.Responses.Search {
     /// <summary>
     /// 
     /// </summary>
