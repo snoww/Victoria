@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Victoria.Enums;
+using Victoria.Responses.Search;
 
 namespace Victoria.Interfaces {
     /// <inheritdoc />
@@ -61,7 +62,7 @@ namespace Victoria.Interfaces {
         /// 
         /// </summary>
         /// <returns></returns>
-        ValueTask SearchAsync(SearchType searchType, string query);
+        ValueTask<SearchResponse> SearchAsync(SearchType searchType, string query);
 
         /// <summary>
         /// 
