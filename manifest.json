@@ -4,12 +4,34 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "source_relative_path": "_site/guides/snippets/AudioModule.cs",
+      "output": {
+        "resource": {
+          "relative_path": "_site/guides/snippets/AudioModule.cs"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "_site/guides/snippets/AudioService.cs",
+      "output": {
+        "resource": {
+          "relative_path": "_site/guides/snippets/AudioService.cs"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api/Victoria.Decoder.TrackDecoder.yml",
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Decoder.TrackDecoder.html",
-          "hash": "HAc/CmNBeP95BvU86/tinw=="
+          "hash": "yNyhUTWud5GOafe8Y6T6Dw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +55,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.DefaultQueue-1.html",
-          "hash": "c27dodZiZyv5bQe1th6wMQ=="
+          "hash": "GzYvwKEd/BKG9rQ4qU/kkA=="
         }
       },
       "is_incremental": false,
@@ -48,7 +70,7 @@
           "hash": "rkNmX4RPTQvjrsarBaMAwg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,7 +79,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Enums.PlayerState.html",
-          "hash": "MSs+1x80Sz1owNd66IJ2DQ=="
+          "hash": "dtO+nVjXnpCCrQSLnaT6gA=="
         }
       },
       "is_incremental": false,
@@ -93,10 +115,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.Cpu.html",
-          "hash": "iBHemQFyexkzm+fCKgy0TA=="
+          "hash": "QCTmIh/PPWO/Thx35RiMog=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +127,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.Frames.html",
-          "hash": "zWF1ZiN8OmvxQFCsaWYQ0w=="
+          "hash": "1PXaLfkh4y+Sn9f/86jYbg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +139,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.Memory.html",
-          "hash": "V+3+lBwTEDA1rNg1nUULEg=="
+          "hash": "6D8aE1Opo7R//I4sqj47CQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,7 +151,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.PlayerUpdateEventArgs.html",
-          "hash": "YRYPJ7lPd31vz6MTLmyI8g=="
+          "hash": "lIH2x2gcv86lwJvmCwuxcw=="
         }
       },
       "is_incremental": false,
@@ -141,10 +163,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.StatsEventArgs.html",
-          "hash": "oxu0FVVVFdtHYvvO2/hOpg=="
+          "hash": "3LjnbKSGQxlegdh1ceeoyQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,7 +175,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackEndedEventArgs.html",
-          "hash": "LdTbrCO2VxlvdCEgPyER8Q=="
+          "hash": "AUcc/4n9Gzm3kfE9MpXzdQ=="
         }
       },
       "is_incremental": false,
@@ -165,7 +187,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackExceptionEventArgs.html",
-          "hash": "dFTYv3gk50MwZnp9uV5NOQ=="
+          "hash": "nCCq1li9tt5OrAtzF4Km0g=="
         }
       },
       "is_incremental": false,
@@ -177,7 +199,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackStartEventArgs.html",
-          "hash": "viE9Zuzhp6RwNSEumFHVfg=="
+          "hash": "z0GTP4hPa7UAscIAGnJQjQ=="
         }
       },
       "is_incremental": false,
@@ -189,7 +211,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.TrackStuckEventArgs.html",
-          "hash": "O6f8xVUOZHmzH6wOsi5MSA=="
+          "hash": "xD8Bq8NektoA7n+kKgQJIQ=="
         }
       },
       "is_incremental": false,
@@ -201,10 +223,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.EventArgs.WebSocketClosedEventArgs.html",
-          "hash": "qbeQcrWMAiK38btiXQLdaw=="
+          "hash": "gMC+GwwuEsmnYjTRrC5D9Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,7 +250,7 @@
           "hash": "Jz30T3rfb+4zYJBtPw1uhQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +262,7 @@
           "hash": "z0celTHsMQlHwLr1Fs0VQg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,7 +271,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaConfig.html",
-          "hash": "KjeAA+Kya5yyxWvl56EOoA=="
+          "hash": "WIzRa8RFnWS0B0WeZl7JzQ=="
         }
       },
       "is_incremental": false,
@@ -261,7 +283,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaNode-1.html",
-          "hash": "Xn7e720vC0Cf1vkGRlFz0w=="
+          "hash": "sao3Ky/2vFdLAL1luEm+4Q=="
         }
       },
       "is_incremental": false,
@@ -273,7 +295,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaNode.html",
-          "hash": "tXq63gNuismV307zVVVsWQ=="
+          "hash": "Wg+SF1Vh0p1kIkgpTW+s5Q=="
         }
       },
       "is_incremental": false,
@@ -285,7 +307,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaPlayer.html",
-          "hash": "KgQahYdG9eMUpF+RK3obLQ=="
+          "hash": "bIb4yxQVLJFjIIhlFLjS+A=="
         }
       },
       "is_incremental": false,
@@ -297,7 +319,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaSocket.html",
-          "hash": "1RZv6h/SYupipC72vUtfMQ=="
+          "hash": "AD3oaS0mcEkf40G5xvGqzA=="
         }
       },
       "is_incremental": false,
@@ -309,7 +331,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.LavaTrack.html",
-          "hash": "IgQM36i8pWx3fv7P6J7uew=="
+          "hash": "YAgRMv/Gc3D7LFPXftxs5w=="
         }
       },
       "is_incremental": false,
@@ -321,7 +343,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Payloads.EqualizerBand.html",
-          "hash": "xXEXk0KpmGVHv6/0Z+ne/Q=="
+          "hash": "0z1DhoK/27Xvv4DY1DnrJw=="
         }
       },
       "is_incremental": false,
@@ -345,7 +367,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Resolvers.ArtworkResolver.html",
-          "hash": "PbZlg8WyHUPXCVa562XWuQ=="
+          "hash": "1JMvotoCkhxCaNTJlYAC4A=="
         }
       },
       "is_incremental": false,
@@ -357,7 +379,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Resolvers.LyricsResolver.html",
-          "hash": "HoATnZh7JAKuIazmQ6FBQw=="
+          "hash": "ePnioEnSSQ5liL0/6GrsOA=="
         }
       },
       "is_incremental": false,
@@ -381,10 +403,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.FailedAddress.html",
-          "hash": "jX1+7qaBFfaHpvYQ0W7oWg=="
+          "hash": "JVOmM5y2b8ecuQBuGoTn2Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,10 +415,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.IPBlock.html",
-          "hash": "5DpaI0VZTA5ldd2L0zXSEA=="
+          "hash": "sZCqPWhTeB3IIX0qYa0+9A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +427,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.PlaylistInfo.html",
-          "hash": "3x4kZvn3Ig+jDmAlt9y7Xg=="
+          "hash": "WfZ+3rkqq+kg2ne9WxLAIA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +439,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.RestException.html",
-          "hash": "afpmdYDkSBQtew9Kfj50dw=="
+          "hash": "TEjlr6H6jTeZndxu5PEvRQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,10 +451,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.RouteDetail.html",
-          "hash": "wkkcf9T2TlrMyhoXn/PH5A=="
+          "hash": "eTJT6uS48l0acCCOiz78jQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -441,10 +463,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.RouteStatus.html",
-          "hash": "0vKiRXmblGcOU5QB6MPApA=="
+          "hash": "SGidPgxpQAnouhAbivokPQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -453,10 +475,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.Responses.Rest.SearchResponse.html",
-          "hash": "oqaOBmPro3DZ5lhfo5PQgA=="
+          "hash": "Mun5xMnVCwzY/+gSJv2rLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -468,7 +490,7 @@
           "hash": "AIvxS4dlsSCDX7rHiU2cLw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -477,10 +499,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.RoutePlanner.html",
-          "hash": "v0gX99XR99D/dQ7oXptvQA=="
+          "hash": "tpu8m4pp/2Ds5MUeYODyEw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -489,7 +511,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.VictoriaExtensions.html",
-          "hash": "g00ylrQL89BR7VMpJ7qGoQ=="
+          "hash": "I551wEqE3dt4eQN/ZMoLSg=="
         }
       },
       "is_incremental": false,
@@ -501,16 +523,13 @@
       "output": {
         ".html": {
           "relative_path": "api/Victoria.html",
-          "hash": "l2XMroHuWP728y5oQTfiow=="
+          "hash": "LF+EctAvgpAoXF3p2izHKg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidYamlHeader"
-      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -519,7 +538,7 @@
           "hash": "lepOWYUw0eXXttqCgUK3Sw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -554,7 +573,7 @@
           "hash": "y9UeaLzaBjupqoD3/4DP6Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -566,7 +585,7 @@
           "hash": "Lq+h94CB3jAvp34fI30m2g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -578,7 +597,7 @@
           "hash": "puPXOE88xAb5WopIzReE5g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -635,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/samples/fetching-lyrics.html",
-          "hash": "OiMcD6DvFfz4eyVEK6+9nQ=="
+          "hash": "+HxpVro+qv5Pe7ARj5QjRg=="
         }
       },
       "is_incremental": false,
@@ -740,7 +759,7 @@
           "hash": "dn6bu28Ew92bZEHH+PIOpw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -759,25 +778,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 11,
-          "skipped_file_count": 0
+          "skipped_file_count": 11
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 42,
-          "skipped_file_count": 0
+          "skipped_file_count": 34
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -797,8 +814,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

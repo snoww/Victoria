@@ -69,7 +69,7 @@
             <article class="content wrap" id="_content" data-uid="Guides.Samples.FetchingLyrics">
 <h1 id="searching-track-lyrics">Searching track lyrics</h1>
 
-<p>You want to spice up your bot? Say no more fam! Victoria offers 2 built-in lyric providers: OVH and Genius! Lyrics can be searched using the [LyricsResolve][xref:Victoria.Resolvers.LyricsResolver] class. Extension methods are also provided for <a class="xref" href="../../api/Victoria.LavaTrack.html">LavaTrack</a>: <a class="xref" href="../../api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_FetchLyricsFromGeniusAsync_">FetchLyricsFromGeniusAsync</a> &amp; <a class="xref" href="../../api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_FetchLyricsFromOVHAsync_">FetchLyricsFromOVHAsync</a>.</p>
+<p>You want to spice up your bot? Say no more fam! Victoria offers 2 built-in lyric providers: OVH and Genius! Lyrics can be searched using the <a class="xref" href="../../api/Victoria.Resolvers.LyricsResolver.html">LyricsResolve</a> class. Extension methods are also provided for <a class="xref" href="../../api/Victoria.LavaTrack.html">LavaTrack</a>: <a class="xref" href="../../api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_FetchLyricsFromGeniusAsync_">FetchLyricsFromGeniusAsync</a> &amp; <a class="xref" href="../../api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_FetchLyricsFromOVHAsync_">FetchLyricsFromOVHAsync</a>.</p>
 <pre><code class="lang-csharp" name="AudioModule">private static readonly IEnumerable&lt;int&gt; Range = Enumerable.Range(1900, 2000);
 
 [Command(&quot;Genius&quot;, RunMode = RunMode.Async)]

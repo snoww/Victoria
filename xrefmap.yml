@@ -238,6 +238,25 @@ references:
   fullName.vb: Victoria.DefaultQueue(Of T).Shuffle
   nameWithType: DefaultQueue<T>.Shuffle
   nameWithType.vb: DefaultQueue(Of T).Shuffle
+- uid: Victoria.DefaultQueue`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Victoria.DefaultQueue-1.html#Victoria_DefaultQueue_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Victoria.DefaultQueue`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Victoria.DefaultQueue<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: Victoria.DefaultQueue(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: DefaultQueue<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: DefaultQueue(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: Victoria.DefaultQueue`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Victoria.DefaultQueue-1.html#Victoria_DefaultQueue_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Victoria.DefaultQueue`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Victoria.DefaultQueue<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: Victoria.DefaultQueue(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: DefaultQueue<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: DefaultQueue(Of T).System.Collections.IEnumerable.GetEnumerator
 - uid: Victoria.DefaultQueue`1.TryDequeue(`0@)
   name: TryDequeue(out T)
   href: api/Victoria.DefaultQueue-1.html#Victoria_DefaultQueue_1_TryDequeue__0__
@@ -948,6 +967,19 @@ references:
   isSpec: "True"
   fullName: Victoria.LavaConfig.Hostname
   nameWithType: LavaConfig.Hostname
+- uid: Victoria.LavaConfig.IsSSL
+  name: IsSSL
+  href: api/Victoria.LavaConfig.html#Victoria_LavaConfig_IsSSL
+  commentId: P:Victoria.LavaConfig.IsSSL
+  fullName: Victoria.LavaConfig.IsSSL
+  nameWithType: LavaConfig.IsSSL
+- uid: Victoria.LavaConfig.IsSSL*
+  name: IsSSL
+  href: api/Victoria.LavaConfig.html#Victoria_LavaConfig_IsSSL_
+  commentId: Overload:Victoria.LavaConfig.IsSSL
+  isSpec: "True"
+  fullName: Victoria.LavaConfig.IsSSL
+  nameWithType: LavaConfig.IsSSL
 - uid: Victoria.LavaConfig.LogSeverity
   name: LogSeverity
   href: api/Victoria.LavaConfig.html#Victoria_LavaConfig_LogSeverity
@@ -1039,6 +1071,19 @@ references:
   isSpec: "True"
   fullName: Victoria.LavaConfig.SelfDeaf
   nameWithType: LavaConfig.SelfDeaf
+- uid: Victoria.LavaConfig.UserAgent
+  name: UserAgent
+  href: api/Victoria.LavaConfig.html#Victoria_LavaConfig_UserAgent
+  commentId: P:Victoria.LavaConfig.UserAgent
+  fullName: Victoria.LavaConfig.UserAgent
+  nameWithType: LavaConfig.UserAgent
+- uid: Victoria.LavaConfig.UserAgent*
+  name: UserAgent
+  href: api/Victoria.LavaConfig.html#Victoria_LavaConfig_UserAgent_
+  commentId: Overload:Victoria.LavaConfig.UserAgent
+  isSpec: "True"
+  fullName: Victoria.LavaConfig.UserAgent
+  nameWithType: LavaConfig.UserAgent
 - uid: Victoria.LavaNode
   name: LavaNode
   href: api/Victoria.LavaNode.html
@@ -1512,11 +1557,11 @@ references:
   commentId: M:Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack)
   fullName: Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack)
   nameWithType: LavaPlayer.PlayAsync(LavaTrack)
-- uid: Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack,TimeSpan,TimeSpan,System.Boolean)
+- uid: Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack,System.TimeSpan,System.TimeSpan,System.Boolean)
   name: PlayAsync(LavaTrack, TimeSpan, TimeSpan, Boolean)
-  href: api/Victoria.LavaPlayer.html#Victoria_LavaPlayer_PlayAsync_Victoria_LavaTrack_TimeSpan_TimeSpan_System_Boolean_
-  commentId: M:Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack,TimeSpan,TimeSpan,System.Boolean)
-  fullName: Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack, TimeSpan, TimeSpan, System.Boolean)
+  href: api/Victoria.LavaPlayer.html#Victoria_LavaPlayer_PlayAsync_Victoria_LavaTrack_System_TimeSpan_System_TimeSpan_System_Boolean_
+  commentId: M:Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack,System.TimeSpan,System.TimeSpan,System.Boolean)
+  fullName: Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack, System.TimeSpan, System.TimeSpan, System.Boolean)
   nameWithType: LavaPlayer.PlayAsync(LavaTrack, TimeSpan, TimeSpan, Boolean)
 - uid: Victoria.LavaPlayer.PlayAsync*
   name: PlayAsync
@@ -1564,13 +1609,13 @@ references:
   isSpec: "True"
   fullName: Victoria.LavaPlayer.ResumeAsync
   nameWithType: LavaPlayer.ResumeAsync
-- uid: Victoria.LavaPlayer.SeekAsync(System.Nullable{TimeSpan})
+- uid: Victoria.LavaPlayer.SeekAsync(System.Nullable{System.TimeSpan})
   name: SeekAsync(Nullable<TimeSpan>)
-  href: api/Victoria.LavaPlayer.html#Victoria_LavaPlayer_SeekAsync_System_Nullable_TimeSpan__
-  commentId: M:Victoria.LavaPlayer.SeekAsync(System.Nullable{TimeSpan})
+  href: api/Victoria.LavaPlayer.html#Victoria_LavaPlayer_SeekAsync_System_Nullable_System_TimeSpan__
+  commentId: M:Victoria.LavaPlayer.SeekAsync(System.Nullable{System.TimeSpan})
   name.vb: SeekAsync(Nullable(Of TimeSpan))
-  fullName: Victoria.LavaPlayer.SeekAsync(System.Nullable<TimeSpan>)
-  fullName.vb: Victoria.LavaPlayer.SeekAsync(System.Nullable(Of TimeSpan))
+  fullName: Victoria.LavaPlayer.SeekAsync(System.Nullable<System.TimeSpan>)
+  fullName.vb: Victoria.LavaPlayer.SeekAsync(System.Nullable(Of System.TimeSpan))
   nameWithType: LavaPlayer.SeekAsync(Nullable<TimeSpan>)
   nameWithType.vb: LavaPlayer.SeekAsync(Nullable(Of TimeSpan))
 - uid: Victoria.LavaPlayer.SeekAsync*
@@ -1580,13 +1625,13 @@ references:
   isSpec: "True"
   fullName: Victoria.LavaPlayer.SeekAsync
   nameWithType: LavaPlayer.SeekAsync
-- uid: Victoria.LavaPlayer.SkipAsync(System.Nullable{TimeSpan})
+- uid: Victoria.LavaPlayer.SkipAsync(System.Nullable{System.TimeSpan})
   name: SkipAsync(Nullable<TimeSpan>)
-  href: api/Victoria.LavaPlayer.html#Victoria_LavaPlayer_SkipAsync_System_Nullable_TimeSpan__
-  commentId: M:Victoria.LavaPlayer.SkipAsync(System.Nullable{TimeSpan})
+  href: api/Victoria.LavaPlayer.html#Victoria_LavaPlayer_SkipAsync_System_Nullable_System_TimeSpan__
+  commentId: M:Victoria.LavaPlayer.SkipAsync(System.Nullable{System.TimeSpan})
   name.vb: SkipAsync(Nullable(Of TimeSpan))
-  fullName: Victoria.LavaPlayer.SkipAsync(System.Nullable<TimeSpan>)
-  fullName.vb: Victoria.LavaPlayer.SkipAsync(System.Nullable(Of TimeSpan))
+  fullName: Victoria.LavaPlayer.SkipAsync(System.Nullable<System.TimeSpan>)
+  fullName.vb: Victoria.LavaPlayer.SkipAsync(System.Nullable(Of System.TimeSpan))
   nameWithType: LavaPlayer.SkipAsync(Nullable<TimeSpan>)
   nameWithType.vb: LavaPlayer.SkipAsync(Nullable(Of TimeSpan))
 - uid: Victoria.LavaPlayer.SkipAsync*
@@ -1959,15 +2004,12 @@ references:
   isSpec: "True"
   fullName: Victoria.Payloads.EqualizerBand.Band
   nameWithType: EqualizerBand.Band
-- uid: Victoria.Payloads.EqualizerBand.Equals(System.Nullable{System.Object})
-  name: Equals(Nullable<Object>)
-  href: api/Victoria.Payloads.EqualizerBand.html#Victoria_Payloads_EqualizerBand_Equals_System_Nullable_System_Object__
-  commentId: M:Victoria.Payloads.EqualizerBand.Equals(System.Nullable{System.Object})
-  name.vb: Equals(Nullable(Of Object))
-  fullName: Victoria.Payloads.EqualizerBand.Equals(System.Nullable<System.Object>)
-  fullName.vb: Victoria.Payloads.EqualizerBand.Equals(System.Nullable(Of System.Object))
-  nameWithType: EqualizerBand.Equals(Nullable<Object>)
-  nameWithType.vb: EqualizerBand.Equals(Nullable(Of Object))
+- uid: Victoria.Payloads.EqualizerBand.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Victoria.Payloads.EqualizerBand.html#Victoria_Payloads_EqualizerBand_Equals_System_Object_
+  commentId: M:Victoria.Payloads.EqualizerBand.Equals(System.Object)
+  fullName: Victoria.Payloads.EqualizerBand.Equals(System.Object)
+  nameWithType: EqualizerBand.Equals(Object)
 - uid: Victoria.Payloads.EqualizerBand.Equals(Victoria.Payloads.EqualizerBand)
   name: Equals(EqualizerBand)
   href: api/Victoria.Payloads.EqualizerBand.html#Victoria_Payloads_EqualizerBand_Equals_Victoria_Payloads_EqualizerBand_
@@ -2475,13 +2517,13 @@ references:
   commentId: T:Victoria.VictoriaExtensions
   fullName: Victoria.VictoriaExtensions
   nameWithType: VictoriaExtensions
-- uid: Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection,Action{Victoria.LavaConfig})
+- uid: Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection,System.Action{Victoria.LavaConfig})
   name: AddLavaNode(IServiceCollection, Action<LavaConfig>)
-  href: api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_AddLavaNode_IServiceCollection_Action_Victoria_LavaConfig__
-  commentId: M:Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection,Action{Victoria.LavaConfig})
+  href: api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_AddLavaNode_IServiceCollection_System_Action_Victoria_LavaConfig__
+  commentId: M:Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection,System.Action{Victoria.LavaConfig})
   name.vb: AddLavaNode(IServiceCollection, Action(Of LavaConfig))
-  fullName: Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection, Action<Victoria.LavaConfig>)
-  fullName.vb: Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection, Action(Of Victoria.LavaConfig))
+  fullName: Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection, System.Action<Victoria.LavaConfig>)
+  fullName.vb: Victoria.VictoriaExtensions.AddLavaNode(IServiceCollection, System.Action(Of Victoria.LavaConfig))
   nameWithType: VictoriaExtensions.AddLavaNode(IServiceCollection, Action<LavaConfig>)
   nameWithType.vb: VictoriaExtensions.AddLavaNode(IServiceCollection, Action(Of LavaConfig))
 - uid: Victoria.VictoriaExtensions.AddLavaNode*
@@ -2543,11 +2585,11 @@ references:
   isSpec: "True"
   fullName: Victoria.VictoriaExtensions.ShouldPlayNext
   nameWithType: VictoriaExtensions.ShouldPlayNext
-- uid: Victoria.VictoriaExtensions.UseLavaNodeAsync(IServiceProvider)
+- uid: Victoria.VictoriaExtensions.UseLavaNodeAsync(System.IServiceProvider)
   name: UseLavaNodeAsync(IServiceProvider)
-  href: api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_UseLavaNodeAsync_IServiceProvider_
-  commentId: M:Victoria.VictoriaExtensions.UseLavaNodeAsync(IServiceProvider)
-  fullName: Victoria.VictoriaExtensions.UseLavaNodeAsync(IServiceProvider)
+  href: api/Victoria.VictoriaExtensions.html#Victoria_VictoriaExtensions_UseLavaNodeAsync_System_IServiceProvider_
+  commentId: M:Victoria.VictoriaExtensions.UseLavaNodeAsync(System.IServiceProvider)
+  fullName: Victoria.VictoriaExtensions.UseLavaNodeAsync(System.IServiceProvider)
   nameWithType: VictoriaExtensions.UseLavaNodeAsync(IServiceProvider)
 - uid: Victoria.VictoriaExtensions.UseLavaNodeAsync*
   name: UseLavaNodeAsync

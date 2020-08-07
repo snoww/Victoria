@@ -81,6 +81,34 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">LavaPlayer</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IAsyncDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Victoria.html">Victoria</a></h6>
   <h6><strong>Assembly</strong>: Victoria.dll</h6>
   <h5 id="Victoria_LavaPlayer_syntax">Syntax</h5>
@@ -162,7 +190,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="Victoria.Payloads.EqualizerBand.html">EqualizerBand</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="Victoria.Payloads.EqualizerBand.html">EqualizerBand</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -193,7 +221,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="xref">System.DateTimeOffset</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -473,7 +501,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ValueTask</span></td>
+        <td><span class="xref">System.Threading.Tasks.ValueTask</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -522,7 +550,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -553,7 +581,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -602,20 +630,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Yucked/Victoria/new/v5/apiSpec/new?filename=Victoria_LavaPlayer_PlayAsync_Victoria_LavaTrack_TimeSpan_TimeSpan_System_Boolean_.md&amp;value=---%0Auid%3A%20Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack%2CTimeSpan%2CTimeSpan%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Yucked/Victoria/new/v5/apiSpec/new?filename=Victoria_LavaPlayer_PlayAsync_Victoria_LavaTrack_System_TimeSpan_System_TimeSpan_System_Boolean_.md&amp;value=---%0Auid%3A%20Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack%2CSystem.TimeSpan%2CSystem.TimeSpan%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Yucked/Victoria/blob/v5/src/LavaPlayer.cs/#L129">View Source</a>
   </span>
   <a id="Victoria_LavaPlayer_PlayAsync_" data-uid="Victoria.LavaPlayer.PlayAsync*"></a>
-  <h4 id="Victoria_LavaPlayer_PlayAsync_Victoria_LavaTrack_TimeSpan_TimeSpan_System_Boolean_" data-uid="Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack,TimeSpan,TimeSpan,System.Boolean)">PlayAsync(LavaTrack, TimeSpan, TimeSpan, Boolean)</h4>
+  <h4 id="Victoria_LavaPlayer_PlayAsync_Victoria_LavaTrack_System_TimeSpan_System_TimeSpan_System_Boolean_" data-uid="Victoria.LavaPlayer.PlayAsync(Victoria.LavaTrack,System.TimeSpan,System.TimeSpan,System.Boolean)">PlayAsync(LavaTrack, TimeSpan, TimeSpan, Boolean)</h4>
   <div class="markdown level1 summary"><p>Plays the specified track with a custom start and end time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -640,13 +668,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">startTime</span></td>
         <td><p>Custom start time for track. Must be greater than 0.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">endTime</span></td>
         <td><p>Custom end time for track. Must be less than <a class="xref" href="Victoria.LavaTrack.html#Victoria_LavaTrack_Duration">Duration</a>.</p>
 </td>
@@ -669,8 +697,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>Throws when start or end time are out of range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Throws when star time is bigger than end time.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -700,20 +749,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Yucked/Victoria/new/v5/apiSpec/new?filename=Victoria_LavaPlayer_SeekAsync_System_Nullable_TimeSpan__.md&amp;value=---%0Auid%3A%20Victoria.LavaPlayer.SeekAsync(System.Nullable%7BTimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Yucked/Victoria/new/v5/apiSpec/new?filename=Victoria_LavaPlayer_SeekAsync_System_Nullable_System_TimeSpan__.md&amp;value=---%0Auid%3A%20Victoria.LavaPlayer.SeekAsync(System.Nullable%7BSystem.TimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Yucked/Victoria/blob/v5/src/LavaPlayer.cs/#L229">View Source</a>
   </span>
   <a id="Victoria_LavaPlayer_SeekAsync_" data-uid="Victoria.LavaPlayer.SeekAsync*"></a>
-  <h4 id="Victoria_LavaPlayer_SeekAsync_System_Nullable_TimeSpan__" data-uid="Victoria.LavaPlayer.SeekAsync(System.Nullable{TimeSpan})">SeekAsync(Nullable&lt;TimeSpan&gt;)</h4>
+  <h4 id="Victoria_LavaPlayer_SeekAsync_System_Nullable_System_TimeSpan__" data-uid="Victoria.LavaPlayer.SeekAsync(System.Nullable{System.TimeSpan})">SeekAsync(Nullable&lt;TimeSpan&gt;)</h4>
   <div class="markdown level1 summary"><p>Seeks the current track to specified position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -732,7 +781,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">position</span></td>
         <td><p>Position must be less than <a class="xref" href="Victoria.LavaTrack.html#Victoria_LavaTrack_Duration">Duration</a>.</p>
 </td>
@@ -749,26 +798,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Yucked/Victoria/new/v5/apiSpec/new?filename=Victoria_LavaPlayer_SkipAsync_System_Nullable_TimeSpan__.md&amp;value=---%0Auid%3A%20Victoria.LavaPlayer.SkipAsync(System.Nullable%7BTimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Yucked/Victoria/new/v5/apiSpec/new?filename=Victoria_LavaPlayer_SkipAsync_System_Nullable_System_TimeSpan__.md&amp;value=---%0Auid%3A%20Victoria.LavaPlayer.SkipAsync(System.Nullable%7BSystem.TimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Yucked/Victoria/blob/v5/src/LavaPlayer.cs/#L203">View Source</a>
   </span>
   <a id="Victoria_LavaPlayer_SkipAsync_" data-uid="Victoria.LavaPlayer.SkipAsync*"></a>
-  <h4 id="Victoria_LavaPlayer_SkipAsync_System_Nullable_TimeSpan__" data-uid="Victoria.LavaPlayer.SkipAsync(System.Nullable{TimeSpan})">SkipAsync(Nullable&lt;TimeSpan&gt;)</h4>
+  <h4 id="Victoria_LavaPlayer_SkipAsync_System_Nullable_System_TimeSpan__" data-uid="Victoria.LavaPlayer.SkipAsync(System.Nullable{System.TimeSpan})">SkipAsync(Nullable&lt;TimeSpan&gt;)</h4>
   <div class="markdown level1 summary"><p>Skips the current track after the specified delay.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;LavaTrack&gt; SkipAsync(TimeSpan? delay = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;LavaTrack&gt; SkipAsync(TimeSpan? delay = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -781,7 +830,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">delay</span></td>
         <td><p>If set to null, skips instantly otherwise after the specified value.</p>
 </td>
@@ -798,7 +847,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Victoria.LavaTrack.html">LavaTrack</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Victoria.LavaTrack.html">LavaTrack</a>&gt;</td>
         <td><p>The next <a class="xref" href="Victoria.LavaTrack.html">LavaTrack</a>.</p>
 </td>
       </tr>
@@ -830,7 +879,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -878,11 +927,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IAsyncDisposable</span>
+  </div>
 </article>
           </div>
           
