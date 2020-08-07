@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using Victoria.Converters;
 using Victoria.Interfaces;
 
 namespace Victoria.Responses.Search {
@@ -28,7 +29,7 @@ namespace Victoria.Responses.Search {
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("tracks")]
+        [JsonPropertyName("tracks"), JsonConverter(typeof(LavaTracksPropertyConverter))]
         public IReadOnlyCollection<ILavaTrack> Tracks { get; internal set; }
     }
 }
