@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Victoria.Enums;
 using Victoria.Responses.Search;
 
 namespace Victoria.Interfaces {
