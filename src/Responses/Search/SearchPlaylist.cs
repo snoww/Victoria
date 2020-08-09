@@ -5,17 +5,17 @@ namespace Victoria.Responses.Search {
     /// <summary>
     /// 
     /// </summary>
-    public struct SearchException {
+    public struct SearchPlaylist {
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("message"), JsonInclude]
-        public string Message { get; private set; }
+        [JsonPropertyName("name"), JsonInclude]
+        public string Name { get; private set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("severity"), JsonInclude]
-        public string Severity { get; private set; }
+        [JsonPropertyName("selectedTrack"), JsonInclude]
+        public int SelectedTrack { get; private set; }
     }
 }

@@ -2,7 +2,7 @@
     /// <summary>
     /// Search status when searching for songs via Lavalink.
     /// </summary>
-    public enum SearchStatus {
+    public enum SearchStatus : byte {
         /// <summary>
         ///     Returned when a single track is loaded.
         /// </summary>

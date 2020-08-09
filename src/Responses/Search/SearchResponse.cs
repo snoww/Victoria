@@ -3,6 +3,7 @@ using System.Text.Json.Serialization;
 using Victoria.Converters;
 using Victoria.Interfaces;
 
+// ReSharper disable UnusedAutoPropertyAccessor.Local
 namespace Victoria.Responses.Search {
     /// <summary>
     /// 
@@ -11,25 +12,25 @@ namespace Victoria.Responses.Search {
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("loadType")]
-        public SearchStatus Status { get; internal set; }
+        [JsonPropertyName("loadType"), JsonInclude, JsonConverter(typeof(SearchStatusConverter))]
+        public SearchStatus Status { get; private set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("playlistInfo")]
-        public PlaylistInfo Playlist { get; internal set; }
+        [JsonPropertyName("playlistInfo"), JsonInclude]
+        public SearchPlaylist SearchPlaylist { get; private set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("exception")]
-        public SearchException Exception { get; internal set; }
+        [JsonPropertyName("exception"), JsonInclude]
+        public SearchException Exception { get; private set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [JsonPropertyName("tracks"), JsonConverter(typeof(LavaTracksPropertyConverter))]
-        public IReadOnlyCollection<ILavaTrack> Tracks { get; internal set; }
+        [JsonPropertyName("tracks"), JsonInclude, JsonConverter(typeof(LavaTracksPropertyConverter))]
+        public IReadOnlyCollection<ILavaTrack> Tracks { get; private set; }
     }
 }
