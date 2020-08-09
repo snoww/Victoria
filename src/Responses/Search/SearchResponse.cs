@@ -19,7 +19,7 @@ namespace Victoria.Responses.Search {
         /// 
         /// </summary>
         [JsonPropertyName("playlistInfo"), JsonInclude]
-        public SearchPlaylist SearchPlaylist { get; private set; }
+        public SearchPlaylist Playlist { get; private set; }
 
         /// <summary>
         /// 

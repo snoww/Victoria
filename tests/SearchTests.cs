@@ -17,7 +17,7 @@ namespace Victoria.Tests {
             
             Assert.IsNotNull(searchResponse);
             Assert.IsNotNull(searchResponse.Exception, "searchResponse.Exception != null");
-            Assert.IsNotNull(searchResponse.Playlist, "searchResponse.Playlist != null");
+            Assert.IsNotNull(searchResponse.Playlist, "searchResponse.SearchPlaylist != null");
             Assert.IsNotNull(searchResponse.Tracks, "searchResponse.Tracks != null");
             Assert.IsNotNull(searchResponse.Status, "searchResponse.Status != null");
         }
