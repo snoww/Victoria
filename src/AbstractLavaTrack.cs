@@ -58,5 +58,21 @@ namespace Victoria {
             IsSeekable = isSeekable;
             IsLiveStream = isLiveStream;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="lavaTrack"></param>
+        protected AbstractLavaTrack(ILavaTrack lavaTrack) {
+            Hash = lavaTrack.Hash;
+            Id = lavaTrack.Id;
+            Title = lavaTrack.Title;
+            Author = lavaTrack.Author;
+            Url = lavaTrack.Url;
+            Position = lavaTrack.Position;
+            Duration = lavaTrack.Duration;
+            IsSeekable = lavaTrack.IsSeekable;
+            IsLiveStream = lavaTrack.IsLiveStream;
+        }
     }
 }
