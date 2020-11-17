@@ -61,6 +61,11 @@ namespace Victoria {
         /// </summary>
         public int Volume { get; private set; }
 
+        /// <summary>
+        ///     Check if autoplay is enabled
+        /// </summary>
+        public bool Autoplay { get; set; }
+
         private readonly IDictionary<int, EqualizerBand> _equalizer;
 
         private readonly LavaSocket _lavaSocket;
