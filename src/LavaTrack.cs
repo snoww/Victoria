@@ -1,4 +1,5 @@
 using System;
+using Discord;
 
 namespace Victoria {
     /// <summary>
@@ -49,6 +50,11 @@ namespace Victoria {
         ///     Track's url.
         /// </summary>
         public string Url { get; }
+
+        /// <summary>
+        ///     User who queued the track.
+        /// </summary>
+        public IGuildUser Queued { get; set; }
 
         /// <summary>
         /// 
