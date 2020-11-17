@@ -60,11 +60,6 @@ namespace Victoria {
         ///     Player's current volume.
         /// </summary>
         public int Volume { get; private set; }
-        
-        /// <summary>
-        ///     Enable autoplay/
-        /// </summary>
-        public bool Autoplay { get; set; }
 
         private readonly IDictionary<int, EqualizerBand> _equalizer;
 
